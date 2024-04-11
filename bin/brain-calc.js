@@ -35,10 +35,10 @@ const playCalculatorGame = () => {
     const number1 = getRandomNumber (1, 20);
     const number2 = getRandomNumber (1, 20);
     const operator = getRandomOperator();
-    const expresion = `${number1}${operator}${number2}`;
+    const expression = `${number1}${operator}${number2}`;
     const correctAnswer = calculateExpression(number1, operator, number2);
 
-    console.log(`Question: ${expresion}`);
+    console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === correctAnswer.toString()) {

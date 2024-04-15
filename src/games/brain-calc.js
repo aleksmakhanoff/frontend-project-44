@@ -25,7 +25,7 @@ const generation = () => {
   const number1 = getRandomNumber(1, 20);
   const number2 = getRandomNumber(1, 20);
   const operator = getRandomOperator();
-  const question = `${number1}${operator}${number2}`;
+  const question = `${number1} ${operator} ${number2}`;
   const correctAnswer = String(calculateExpression(number1, operator, number2));
   return [question, correctAnswer];
 };

@@ -32,7 +32,7 @@
 Суть игры в следующем: пользователю показывается случайное математическое выражение, которое нужно вычислить и записать правильный ответ.
 Запуск игры: brain-calc
 
-[![asciicast](https://asciinema.org/a/654269.svg)](https://asciinema.org/a/654269)
+[![asciicast](https://asciinema.org/a/654285.svg)](https://asciinema.org/a/654285)
 
 Игра "НОД"
 

@@ -14,10 +14,12 @@ const gameBasisGeneration = () => {
   const numStart = getRandomNumber(1, 5);
   const numStep = getRandomNumber(1, 5);
   const numLength = getRandomNumber(5, 10);
+
   const progression = isProgression(numStart, numStep, numLength);
   const hidIndex = getRandomNumber(1, progression.length - 1);
   const hidNumber = progression[hidIndex];
   progression[hidIndex] = '..';
+
   const question = progression.join(' ');
   const correctAnswer = String(hidNumber);
   return [question, correctAnswer];

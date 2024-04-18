@@ -1,4 +1,4 @@
-import { getRandomNumber, playGame } from '../index.js';
+import { playGame, oneNumberGeneration } from '../index.js';
 
 const isSimple = (num) => {
   if (num < 2) {
@@ -14,12 +14,7 @@ const isSimple = (num) => {
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameBasisGeneration = () => {
-  const randomNumber = getRandomNumber(1, 100);
-  const question = randomNumber.toString();
-  const correctAnswer = isSimple(randomNumber) ? 'yes' : 'no';
-  return [question, correctAnswer];
-};
+const gameBasisGeneration = () => oneNumberGeneration(isSimple);
 
 const playPrimeGame = () => playGame(rule, gameBasisGeneration);
 

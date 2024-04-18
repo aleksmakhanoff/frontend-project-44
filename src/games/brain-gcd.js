@@ -11,7 +11,7 @@ const isNod = (a, b) => {
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-const generation = () => {
+const gameBasisGeneration = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
@@ -19,6 +19,6 @@ const generation = () => {
   return [question, correctAnswer];
 };
 
-const playGcdGame = () => playGame(rule, generation);
+const playGcdGame = () => playGame(rule, gameBasisGeneration);
 
 export default playGcdGame;

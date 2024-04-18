@@ -21,7 +21,7 @@ const calculateExpression = (num1, operator, num2) => {
 
 const rule = 'What is the result of the expression?';
 
-const generation = () => {
+const gameBasisGeneration = () => {
   const number1 = getRandomNumber(1, 20);
   const number2 = getRandomNumber(1, 20);
   const operator = getRandomOperator();
@@ -30,6 +30,6 @@ const generation = () => {
   return [question, correctAnswer];
 };
 
-const playCalculatorGame = () => playGame(rule, generation);
+const playCalculatorGame = () => playGame(rule, gameBasisGeneration);
 
 export default playCalculatorGame;

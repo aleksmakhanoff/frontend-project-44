@@ -10,7 +10,7 @@ const isProgression = (start, step, length) => {
 
 const rule = 'What number is missing in the progression?';
 
-const generation = () => {
+const gameBasisGeneration = () => {
   const numStart = getRandomNumber(1, 5);
   const numStep = getRandomNumber(1, 5);
   const numLength = getRandomNumber(5, 10);
@@ -23,6 +23,6 @@ const generation = () => {
   return [question, correctAnswer];
 };
 
-const playProgressionGame = () => playGame(rule, generation);
+const playProgressionGame = () => playGame(rule, gameBasisGeneration);
 
 export default playProgressionGame;

@@ -14,13 +14,13 @@ const isSimple = (num) => {
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const generation = () => {
+const gameBasisGeneration = () => {
   const randomNumber = getRandomNumber(1, 100);
   const question = randomNumber.toString();
   const correctAnswer = isSimple(randomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const playPrimeGame = () => playGame(rule, generation);
+const playPrimeGame = () => playGame(rule, gameBasisGeneration);
 
 export default playPrimeGame;
